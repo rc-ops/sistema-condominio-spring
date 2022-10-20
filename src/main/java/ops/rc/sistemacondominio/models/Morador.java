@@ -1,14 +1,13 @@
 package ops.rc.sistemacondominio.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.HashSet;
+import java.util.List;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -19,17 +18,19 @@ public class Morador implements Serializable {
     private String cpf;
 
     @OneToMany(mappedBy = "morador") // Nome do atributo na entidade Email que faz relacionamento com a classe Morador
-    private HashSet<Email> emails;
+    private List<Email> emails;
 
+    @Column(length = 50)
     private String observacoes;
 
+    @Column(length = 50)
     private String email;
 
     @OneToMany(mappedBy = "morador")
-    private HashSet<Telefone> telefones;
+    private List<Telefone> telefones;
 
     @OneToMany(mappedBy = "morador")
-    private HashSet<Pendencias> pendencias;
+    private List<Pendencia> pendencias;
 
     @Column(nullable = false, length = 50)
     private String nome;
@@ -41,12 +42,13 @@ public class Morador implements Serializable {
     private int apartamento;
 
     @OneToMany(mappedBy = "morador")
-    private HashSet<Pagamentos> pagamentos;
+    private List<Pagamento> pagamentos;
 
     @Column(nullable = false, name = "situacao_morador")
     @Enumerated(value = EnumType.STRING)
     private SituacaoMorador situacaoMorador;
 
-    @OneToOne
-    private Reuniao reuniao;
+    //Todo: aprender sobre @OneToOne
+    @OneToMany(mappedBy = "morador")
+    private List<Reuniao> reuniao;
 }

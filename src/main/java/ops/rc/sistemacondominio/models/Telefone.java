@@ -1,20 +1,21 @@
 package ops.rc.sistemacondominio.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Table(name = "telefones_moradores")
 public class Telefone implements Serializable {
     @Id
+    @Column(length = 11)
     private String cpf;
+    @Column(length = 11)
     private String telefone;
 
     @ManyToOne
