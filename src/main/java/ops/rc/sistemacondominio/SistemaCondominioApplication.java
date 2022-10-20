@@ -1,4 +1,4 @@
-package com.example.sistemacondominio;
+package ops.rc.sistemacondominio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

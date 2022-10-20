@@ -8,7 +8,7 @@
         <version>2.7.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
+    <groupId>ops.rc</groupId>
     <artifactId>sistema-condominio</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>sistema-condominio</name>
