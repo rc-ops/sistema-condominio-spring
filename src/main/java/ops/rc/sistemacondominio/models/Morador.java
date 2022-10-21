@@ -20,11 +20,11 @@ public class Morador implements Serializable {
     @OneToMany(mappedBy = "morador") // Nome do atributo na entidade Email que faz relacionamento com a classe Morador
     private List<Email> emails;
 
-    @Column(length = 50)
-    private String observacoes;
+    @ElementCollection
+    private List<String> observacoes;
 
-    @Column(length = 50)
-    private String email;
+//    @Column(length = 50)
+//    private String email;
 
     @OneToMany(mappedBy = "morador")
     private List<Telefone> telefones;
@@ -44,11 +44,12 @@ public class Morador implements Serializable {
     @OneToMany(mappedBy = "morador")
     private List<Pagamento> pagamentos;
 
-    @Column(nullable = false, name = "situacao_morador")
+    @Column(nullable = false, name = "situacao_morador", length = 11)
     @Enumerated(value = EnumType.STRING)
     private SituacaoMorador situacaoMorador;
 
     //Todo: aprender sobre @OneToOne
-    @OneToMany(mappedBy = "morador")
-    private List<Reuniao> reuniao;
+    @ManyToOne
+    @JoinColumn(name = "reuniao_codigo")
+    private Reuniao reuniao;
 }

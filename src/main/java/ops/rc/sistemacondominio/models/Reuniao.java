@@ -5,6 +5,7 @@ import lombok.*;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -15,15 +16,15 @@ import java.util.Date;
 public class Reuniao implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "codigo_reuniao", updatable = false)
     private int codigo;
 
     @Column(name = "data_reuniao", nullable = false)
     private Date data;
 
-    @Column(name = "finalidade_reuniao", nullable = false)
+    @Column(name = "finalidade_reuniao", nullable = false, length = 50)
     private String finalidade;
 
-    @ManyToOne
-    @JoinColumn(name = "morador_cpf")
-    private Morador morador;
+    @OneToMany(mappedBy = "reuniao")
+    private List<Morador> morador;
 }

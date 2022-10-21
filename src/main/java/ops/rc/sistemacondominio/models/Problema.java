@@ -18,9 +18,10 @@ import java.util.Date;
 public class Problema implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "codigo", updatable = false)
     private int codigo;
 
-    @Column(name = "nome_problema")
+    @Column(name = "nome_problema", length = 30)
     private String problema;
 
     @Column(name = "data_inicio")
@@ -29,10 +30,10 @@ public class Problema implements Serializable {
     @Column(name = "data_resolucao")
     private Date dataResolucao;
 
-    @Column(name = "descricao_problema")
+    @Column(name = "descricao_problema", length = 50)
     private String descricao;
 
     @Enumerated(value = EnumType.STRING)
-    @Column(name = "situacao_problema", nullable = false)
+    @Column(name = "situacao_problema", nullable = false, length = 15)
     private SituacaoProblema situacaoProblema;
 }
