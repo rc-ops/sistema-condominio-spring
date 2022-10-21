@@ -28,12 +28,12 @@ public class MoradorController {
         return service.listaMoradores();
     }
 
-    @GetMapping("/pesquisa/{cpf}")
+    @GetMapping("/pesquisacpf/{cpf}")
     public Morador pesquisaMorador(@PathVariable(name = "cpf") String cpf) {
         return service.pesquisaMorador(cpf);
     }
 
-    @GetMapping("/pesquisa/{nome}")
+    @GetMapping("/pesquisanome/{nome}")
     public Morador pesquisaMoradorNome(@PathVariable(name = "nome") String nome) {
         return service.pesquisaMoradorNome(nome);
     }

@@ -17,39 +17,28 @@ public class Morador implements Serializable {
     @Column(nullable = false, length = 11)
     private String cpf;
 
-    @OneToMany(mappedBy = "morador") // Nome do atributo na entidade Email que faz relacionamento com a classe Morador
-    private List<Email> emails;
-
-    @ElementCollection
-    private List<String> observacoes;
-
-//    @Column(length = 50)
-//    private String email;
-
-    @OneToMany(mappedBy = "morador")
-    private List<Telefone> telefones;
-
-    @OneToMany(mappedBy = "morador")
-    private List<Pendencia> pendencias;
-
     @Column(nullable = false, length = 50)
     private String nome;
 
     @Column(nullable = false, length = 50)
     private String sobrenome;
 
+    @Column(name = "telefones", length = 50)
+    private String telefones;
+
+    @Column(name = "emails", length = 50)
+    private String emails;
+
     @Column(nullable = false)
     private int apartamento;
 
-    @OneToMany(mappedBy = "morador")
-    private List<Pagamento> pagamentos;
+    @Column(name = "observacoes")
+    private String observacoes;
+
+    @Column(name = "pendencias", length = 200)
+    private String pendencias;
 
     @Column(nullable = false, name = "situacao_morador", length = 11)
     @Enumerated(value = EnumType.STRING)
     private SituacaoMorador situacaoMorador;
-
-    //Todo: aprender sobre @OneToOne
-    @ManyToOne
-    @JoinColumn(name = "reuniao_codigo")
-    private Reuniao reuniao;
 }

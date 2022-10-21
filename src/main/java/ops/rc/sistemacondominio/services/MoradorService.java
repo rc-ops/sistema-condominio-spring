@@ -47,8 +47,6 @@ public class MoradorService {
         morador.setPendencias(moradorAtualizado.getPendencias());
         morador.setSituacaoMorador(moradorAtualizado.getSituacaoMorador());
         morador.setTelefones(moradorAtualizado.getTelefones());
-        morador.setPagamentos(moradorAtualizado.getPagamentos());
-        morador.setReuniao(moradorAtualizado.getReuniao());
         return repository.save(morador);
     }
 }

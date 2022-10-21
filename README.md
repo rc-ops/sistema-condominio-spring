@@ -1,3 +1,2 @@
-# sistema-condominio-spring
-
-Sistema para gerenciamento de um condomínio feito em Spring
+# Sistema Condomínio
+- Esse é um projeto feito em Spring projetado para realizar o gerenciamento de um condomínio.
