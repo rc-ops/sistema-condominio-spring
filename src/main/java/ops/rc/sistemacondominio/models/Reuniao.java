@@ -4,8 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -20,11 +19,8 @@ public class Reuniao implements Serializable {
     private int codigo;
 
     @Column(name = "data_reuniao", nullable = false)
-    private Date data;
+    private LocalDate data;
 
     @Column(name = "finalidade_reuniao", nullable = false, length = 50)
     private String finalidade;
-
-    @OneToMany(mappedBy = "reuniao")
-    private List<Morador> morador;
 }
