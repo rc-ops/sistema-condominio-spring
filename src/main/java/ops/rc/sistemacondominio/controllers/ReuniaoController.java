@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/reuniao")
+@RequestMapping("/reunioes")
 public class ReuniaoController {
 
     ReuniaoService service;
@@ -26,7 +26,7 @@ public class ReuniaoController {
         return service.novasReunioes(reunioes);
     }
 
-    @GetMapping("/todas")
+    @GetMapping("")
     public List<Reuniao> listaReunioes() {
         return service.listaReunioes();
     }

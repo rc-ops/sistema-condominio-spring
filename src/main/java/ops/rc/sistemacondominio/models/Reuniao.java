@@ -21,6 +21,6 @@ public class Reuniao implements Serializable {
     @Column(name = "data_reuniao", nullable = false)
     private LocalDate data;
 
-    @Column(name = "finalidade_reuniao", nullable = false, length = 50)
+    @Column(name = "finalidade_reuniao", nullable = false, length = 150)
     private String finalidade;
 }

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.boot.context.properties.bind.DefaultValue;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -21,7 +22,7 @@ public class Problema implements Serializable {
     @Column(name = "codigo", updatable = false)
     private int codigo;
 
-    @Column(name = "nome_problema", length = 30)
+    @Column(name = "nome_problema", length = 50)
     private String problema;
 
     @Column(name = "data_inicio")
@@ -30,7 +31,7 @@ public class Problema implements Serializable {
     @Column(name = "data_resolucao")
     private Date dataResolucao;
 
-    @Column(name = "descricao_problema", length = 50)
+    @Column(name = "descricao_problema", length = 150)
     private String descricao;
 
     @Enumerated(value = EnumType.STRING)

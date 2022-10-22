@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class MoradorService {
     @Autowired
-    MoradorRepository repository;
+    private MoradorRepository repository;
 
     public Morador novoMorador(Morador morador) {
         return repository.save(morador);

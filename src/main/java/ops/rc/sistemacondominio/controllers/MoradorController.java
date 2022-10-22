@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/morador")
+@RequestMapping("/moradores")
 public class MoradorController {
     @Autowired
     private MoradorService service;
@@ -23,7 +23,7 @@ public class MoradorController {
         return service.novosMoradores(moradores);
     }
 
-    @GetMapping("/todos")
+    @GetMapping("")
     public List<Morador> listaMoradores() {
         return service.listaMoradores();
     }

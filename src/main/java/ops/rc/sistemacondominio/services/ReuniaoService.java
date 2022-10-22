@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class ReuniaoService {
     @Autowired
-    ReuniaoRepository repository;
+    private ReuniaoRepository repository;
 
     public Reuniao novaReuniao(Reuniao reuniao) {
         return repository.save(reuniao);
