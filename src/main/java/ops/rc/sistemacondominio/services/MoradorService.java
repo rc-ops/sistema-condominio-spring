@@ -20,7 +20,7 @@ public class MoradorService {
         return repository.saveAll(moradores);
     }
 
-    public Morador pesquisaMorador(String cpf) {
+    public Morador pesquisaMoradorCpf(String cpf) {
         return repository.findById(cpf).orElse(null);
     }
 
@@ -28,8 +28,12 @@ public class MoradorService {
         return repository.findAll();
     }
 
-    public Morador pesquisaMoradorNome(String nome) {
-        return repository.findByNome(nome);
+    public List<Morador> pesquisaMoradorNome(String nome) {
+        return repository.findMoradorByNomeContainingIgnoreCase(nome);
+    }
+
+    public List<Morador> pesquisaMoradorSobrenome(String sobrenome) {
+        return repository.findMoradorBySobrenomeContainingIgnoreCase(sobrenome);
     }
 
     public void deletarMorador(String cpf) {

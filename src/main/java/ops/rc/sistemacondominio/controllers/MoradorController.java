@@ -28,23 +28,28 @@ public class MoradorController {
         return service.listaMoradores();
     }
 
-    @GetMapping("/pesquisacpf/{cpf}")
-    public Morador pesquisaMorador(@PathVariable(name = "cpf") String cpf) {
-        return service.pesquisaMorador(cpf);
+    @GetMapping("/pesquisa/cpf/{cpf}")
+    public Morador pesquisaMoradorCpf(@PathVariable(name = "cpf") String cpf) {
+        return service.pesquisaMoradorCpf(cpf);
     }
 
-    @GetMapping("/pesquisanome/{nome}")
-    public Morador pesquisaMoradorNome(@PathVariable(name = "nome") String nome) {
+    @GetMapping("/pesquisa/nome/{nome}")
+    public List<Morador> pesquisaMoradorNome(@PathVariable("nome") String nome) {
         return service.pesquisaMoradorNome(nome);
     }
 
+    @GetMapping("/pesquisa/sobrenome/{sobrenome}")
+    public List<Morador> pesquisaMoradorSobrenome(@PathVariable("sobrenome") String sobrenome) {
+        return service.pesquisaMoradorSobrenome(sobrenome);
+    }
+
     @DeleteMapping("/deletar/{cpf}")
-    public void deletarMorador(@PathVariable(name = "cpf") String cpf) {
+    public void deletarMorador(@PathVariable("cpf") String cpf) {
         service.deletarMorador(cpf);
     }
 
     @PutMapping("/atualizar/{cpf}")
-    public Morador atualizarMorador(@PathVariable(name = "cpf") String cpf, @RequestBody Morador morador) {
+    public Morador atualizarMorador(@PathVariable("cpf") String cpf, @RequestBody Morador morador) {
         return service.atualizarMorador(cpf, morador);
     }
 }

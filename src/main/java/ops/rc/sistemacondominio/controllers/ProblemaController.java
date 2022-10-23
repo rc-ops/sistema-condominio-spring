@@ -30,12 +30,12 @@ public class ProblemaController {
         return service.listaProblemas();
     }
 
-    @GetMapping("/{codigo}")
+    @GetMapping("/pesquisa/codigo/{codigo}")
     public Problema pesquisaProblemaId(@PathVariable int codigo) {
         return service.pesquisaProblemaId(codigo);
     }
 
-    @GetMapping("/pesquisa/{nome}")
+    @GetMapping("/pesquisa/nome/{nome}")
     public List<Problema> pesquisaProblemaNome(@PathVariable String nome) {
         return service.pesquisaProblemaNome(nome);
     }

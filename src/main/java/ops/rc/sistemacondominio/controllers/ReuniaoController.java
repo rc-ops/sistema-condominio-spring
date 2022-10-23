@@ -31,12 +31,12 @@ public class ReuniaoController {
         return service.listaReunioes();
     }
 
-    @GetMapping("/{codigo}")
+    @GetMapping("/pesquisa/codigo/{codigo}")
     public Reuniao pesquisaReuniao(@PathVariable(name = "codigo") int codigo) {
         return service.pesquisaReuniao(codigo);
     }
 
-    @GetMapping("/pesquisa/{finalidade}")
+    @GetMapping("/pesquisa/finalidade/{finalidade}")
     public List<Reuniao> pesquisaReuniaoFinalidade(@PathVariable(name = "finalidade") String finalidade){
         return service.pesquisaReuniaoFinalidade(finalidade);
     }
