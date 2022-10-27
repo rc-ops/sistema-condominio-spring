@@ -1,64 +1,315 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="df736c99-a420-471e-a93b-f633093580f1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/SistemaCondominioApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/controllers/MoradorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/controllers/ProblemaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/controllers/ReuniaoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/models/Morador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/models/Problema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/models/Reuniao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/models/SituacaoMorador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/models/SituacaoProblema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/repositories/MoradorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/repositories/ProblemaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/repositories/ReuniaoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/services/MoradorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/services/ProblemaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/services/ReuniaoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ops/rc/sistemacondominio/SistemaCondominioApplicationTests.java" beforeDir="false" />
+    <list default="true" id="b9e1c113-6f76-4a40-874f-6d971432d050" name="Changes" comment="Adds resource not found exception">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/SistemaCondominioApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/controllers/MoradorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/controllers/ProblemaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/controllers/ReuniaoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/exceptions/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/Morador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/Problema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/Reuniao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/SituacaoMorador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/SituacaoProblema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/repositories/MoradorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/repositories/ProblemaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/repositories/ReuniaoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/services/MoradorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/services/ProblemaService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/services/ReuniaoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/src/test/java/ops/rc/sistemacondominio/SistemaCondominioApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
-  <component name="ProjectId" id="2GYGd28kMMrGbzPmd462Y3txXUs" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="com.haulmont.jpb.JpaEntity" />
+        <option value="Enum" />
+        <option value="com.haulmont.jpb.JpaRepository" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="angular" />
+        <entry key="$PROJECT_DIR$" value="simplificando" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GNCyI2uws0rLvu0cN2Yx0yJNj0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "application.passwordSafe"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;83dd8d00-8756-4380-8869-02d3501d0d11&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rodrigo/Desktop/praticando-spring/sistema-condominio/spring&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.21724138&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;27ab455c408ea47cd11ea2ef72d1adf6&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;MySQL&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rodrigo\Desktop\praticando-spring\sistema-condominio\src\main\resources\templates" />
+      <recent name="C:\Users\Rodrigo\Desktop\praticando-spring\sistema-condominio\src\main\resources\static" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SistemaCondominio" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="sistema-condominio" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ops.rc.sistemacondominio.SistemaCondominioApplication" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="df736c99-a420-471e-a93b-f633093580f1" name="Changes" comment="" />
-      <created>1666558187521</created>
+      <changelist id="b9e1c113-6f76-4a40-874f-6d971432d050" name="Changes" comment="" />
+      <created>1666219911001</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666558187521</updated>
-      <workItem from="1666558188992" duration="5000" />
+      <updated>1666219911001</updated>
+      <workItem from="1666219912203" duration="233000" />
+      <workItem from="1666220167064" duration="17355000" />
+      <workItem from="1666270377811" duration="2040000" />
+      <workItem from="1666288242616" duration="2969000" />
+      <workItem from="1666299392457" duration="1121000" />
+      <workItem from="1666300659733" duration="3314000" />
+      <workItem from="1666316208068" duration="5025000" />
+      <workItem from="1666350676734" duration="1767000" />
+      <workItem from="1666359262951" duration="2774000" />
+      <workItem from="1666383377947" duration="20331000" />
+      <workItem from="1666444323873" duration="1229000" />
+      <workItem from="1666535458327" duration="1279000" />
+      <workItem from="1666539611239" duration="11249000" />
+      <workItem from="1666558231209" duration="951000" />
+      <workItem from="1666575027607" duration="895000" />
+      <workItem from="1666633595104" duration="1487000" />
+      <workItem from="1666646552686" duration="1948000" />
+      <workItem from="1666722012193" duration="1917000" />
+      <workItem from="1666898212765" duration="5306000" />
+      <workItem from="1666906301290" duration="23000" />
     </task>
+    <task id="LOCAL-00001" summary="Add project files">
+      <created>1666220468660</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666220468660</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add entidades">
+      <created>1666238182181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666238182181</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Todas entidades criadas">
+      <created>1666289997423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666289997423</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Melhora entity morador, adiciona seu respectivo controller, repository e service, além de resolver problemas de comprimento máximo no MyISAM">
+      <created>1666319913274</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666319913275</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Adds Morador and deletes Telefone, Pagamento and Pendencia entities">
+      <created>1666393696100</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666393696100</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updates Reuniao entity and creates its controller, service and repository">
+      <created>1666398847788</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666398847788</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adds Morador and Problema entities, services and controllers. Also changes some endpoints">
+      <created>1666405239392</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666405239392</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Deletes Email entity">
+      <created>1666405343669</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666405343669</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Adds search for name and surname and improves endpoints mapping">
+      <created>1666536733503</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1666536733503</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updates application.properties">
+      <created>1666539998156</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666539998156</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Adds inserted data validation">
+      <created>1666554054846</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666554054846</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Creates folder containing spring files">
+      <created>1666575102511</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666575102512</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Starts Angular project and creates separated folders for Spring and Angular projects">
+      <created>1666575677817</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1666575677817</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Deletes angular old folder">
+      <created>1666634058319</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1666634058319</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Adds resource not found exception">
+      <created>1666647945157</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1666647945157</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Add project files" />
+    <MESSAGE value="Add entidades" />
+    <MESSAGE value="Todas entidades criadas" />
+    <MESSAGE value="Melhora entidade morador, adiciona seu respectivo controller, repository e service, além de resolver problemas de comprimento máximo no MyISAM" />
+    <MESSAGE value="Melhora entity morador, adiciona seu respectivo controller, repository e service, além de resolver problemas de comprimento máximo no MyISAM" />
+    <MESSAGE value="Adds Morador and deletes Telefone, Pagamento and Pendencia entities" />
+    <MESSAGE value="Updates Reuniao entity and creates its controller, service and repository" />
+    <MESSAGE value="Adds Morador and Problema entities, services and controllers. Also changes some endpoints" />
+    <MESSAGE value="Deletes Email entity" />
+    <MESSAGE value="Adds search for name and surname and improves endpoints mapping" />
+    <MESSAGE value="Updates application.properties" />
+    <MESSAGE value="Adds inserted data validation" />
+    <MESSAGE value="Creates folder containing spring files" />
+    <MESSAGE value="Starts Angular project and creates separated folders for Spring and Angular projects" />
+    <MESSAGE value="Deletes angular old folder" />
+    <MESSAGE value="Adds resource not found exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds resource not found exception" />
   </component>
 </project>
