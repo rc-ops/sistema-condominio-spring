@@ -5,32 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9e1c113-6f76-4a40-874f-6d971432d050" name="Changes" comment="Adds resource not found exception">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/SistemaCondominioApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/controllers/MoradorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/controllers/ProblemaController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/controllers/ReuniaoController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/exceptions/ResourceNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/Morador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/Problema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/Reuniao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/SituacaoMorador.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/models/SituacaoProblema.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/repositories/MoradorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/repositories/ProblemaRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/repositories/ReuniaoRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/services/MoradorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/services/ProblemaService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/main/java/ops/rc/sistemacondominio/services/ReuniaoService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/src/test/java/ops/rc/sistemacondominio/SistemaCondominioApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +33,15 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$/.." value="angular" />
-        <entry key="$PROJECT_DIR$" value="simplificando" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ops/rc/sistemacondominio/controllers/MoradorController.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -102,12 +82,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rodrigo/Desktop/praticando-spring/sistema-condominio/spring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rodrigo/Downloads/java-client-generated 222&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.21724138&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;27ab455c408ea47cd11ea2ef72d1adf6&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -121,6 +101,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rodrigo\Desktop\praticando-spring\sistema-condominio\back-end\src\main\resources" />
       <recent name="C:\Users\Rodrigo\Desktop\praticando-spring\sistema-condominio\src\main\resources\templates" />
       <recent name="C:\Users\Rodrigo\Desktop\praticando-spring\sistema-condominio\src\main\resources\static" />
     </key>
@@ -137,6 +118,22 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="C:\Users\Rodrigo\Desktop\praticando-spring\sistema-condominio\back-end\gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="C:\Users\Rodrigo\Desktop\praticando-spring\sistema-condominio\back-end\src\main\resources\api-docs.json" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -166,7 +163,16 @@
       <workItem from="1666646552686" duration="1948000" />
       <workItem from="1666722012193" duration="1917000" />
       <workItem from="1666898212765" duration="5306000" />
-      <workItem from="1666906301290" duration="23000" />
+      <workItem from="1666906301290" duration="1969000" />
+      <workItem from="1666912045055" duration="1790000" />
+      <workItem from="1666921762032" duration="231000" />
+      <workItem from="1666982926173" duration="1645000" />
+      <workItem from="1666989002788" duration="154000" />
+      <workItem from="1667231957965" duration="1263000" />
+      <workItem from="1667237098162" duration="1394000" />
+      <workItem from="1667238532654" duration="6504000" />
+      <workItem from="1667323398269" duration="1446000" />
+      <workItem from="1667328745125" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary="Add project files">
       <created>1666220468660</created>
