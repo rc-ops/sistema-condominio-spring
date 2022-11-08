@@ -22,7 +22,6 @@ public class Reuniao implements Serializable {
     private int codigo;
 
     @Column(name = "data_reuniao", nullable = false)
-    @NotEmpty(message = "É preciso inserir a data da reunião no formato AAAA-MM-DD")
     private LocalDate data;
 
     @Column(name = "finalidade_reuniao", nullable = false, length = 150)

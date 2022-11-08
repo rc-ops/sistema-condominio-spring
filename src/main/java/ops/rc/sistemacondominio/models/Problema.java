@@ -9,7 +9,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -29,10 +29,10 @@ public class Problema implements Serializable {
     private String problema;
 
     @Column(name = "data_inicio")
-    private Date dataInicio;
+    private LocalDate dataInicio;
 
     @Column(name = "data_resolucao")
-    private Date dataResolucao;
+    private LocalDate dataResolucao;
 
     @Column(name = "descricao_problema", length = 150, nullable = false)
     @NotEmpty(message = "É preciso adicionar uma descrição para o problema")
@@ -41,6 +41,5 @@ public class Problema implements Serializable {
 
     @Enumerated(value = EnumType.STRING)
     @Column(name = "situacao_problema", nullable = false, length = 15)
-    @NotEmpty(message = "É preciso inserir a situação atual do prpoblema")
     private SituacaoProblema situacaoProblema;
 }
