@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9e1c113-6f76-4a40-874f-6d971432d050" name="Changes" comment="Adds resource not found exception">
+    <list default="true" id="b9e1c113-6f76-4a40-874f-6d971432d050" name="Changes" comment="Removes @NotEmpty validator from LocalDate and Enum types">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +173,10 @@
       <workItem from="1667238532654" duration="6504000" />
       <workItem from="1667323398269" duration="1446000" />
       <workItem from="1667328745125" duration="319000" />
+      <workItem from="1667995698544" duration="22000" />
+      <workItem from="1667996411570" duration="1891000" />
+      <workItem from="1668039280774" duration="361000" />
+      <workItem from="1668041410559" duration="162000" />
     </task>
     <task id="LOCAL-00001" summary="Add project files">
       <created>1666220468660</created>
@@ -290,7 +294,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
